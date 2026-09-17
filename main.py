@@ -31,9 +31,9 @@ print("Hjälten har nu", gold, "guldmyntar")
 
 print()
 if gold >= 15:
-    choice = input("En svärdhandlare har ett magisk svärd. Vill du köpa det för 10 guldmyntar? (Ja/Nej) ")
+    choice = input("En svärdhandlare har ett magisk svärd. Vill du köpa det för 10 guldmyntar? (ja/nej) ")
 
-    if choice == "Ja":
+    if choice == "ja":
         print(hero_name, "köper det magiska svärdet.")
         gold = gold - 10
     else:
@@ -43,4 +43,17 @@ else:
     print("Hjälten har inte tillräckligt med guld för svärdet.")
 
 print("Hjälten har", gold, "guldmyntar kvar.")
+
+
+print()
+choice = input("Hjälten kommer fram till en korsning. Ska hen gå vänster eller höger? (vänster/höger)")
+
+if choice == "vänster":
+    print(hero_name, "väljer den mörka vägen.")
+    gold = gold + 5
+else:
+    print(hero_name, "väljer den ljusa vägen.")
+    gold = gold + 2
+
+print("Efter vägen har hjälten", gold, "guldmynt.")
 
